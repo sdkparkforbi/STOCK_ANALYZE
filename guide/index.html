@@ -184,7 +184,7 @@
       <div class="steps">
         <div class="step"><b>구글 계정</b> — 구글 Colab을 쓰기 위해 필요해요. 가입은 무료입니다.</div>
         <div class="step"><b>인터넷 브라우저</b> — 크롬을 추천합니다. 설치할 프로그램은 없어요. 전부 웹에서 돌아갑니다.</div>
-        <div class="step"><b>비밀 값 3종</b> — DB 접속정보 · OpenAI 키 · (선택) GitHub 토큰. <b>담당 선생님이 따로 알려줍니다.</b> 등록 방법은 아래 <a href="#secret">비밀 등록</a>에서!</div>
+        <div class="step"><b>비밀 값 3종</b> — DB 접속정보 · OpenAI 키 · (선택) GitHub 토큰. <b>별도로 안내된 값을 사용합니다.</b> 등록 방법은 아래 <a href="#secret">비밀 등록</a>에서!</div>
       </div>
       <div class="note warn">🔐 비밀번호·API 키는 <b>프로그램 코드에 적지 않습니다.</b> 대신 Colab의 🔑(비밀) 기능으로 안전하게 넣어요. (그래서 이 프로그램은 공개돼도 안전합니다)</div>
     </div>
@@ -214,11 +214,11 @@
       <p class="lead">Colab을 열면 왼쪽에 열쇠 모양 🔑 메뉴가 있어요. 거기에 비밀 값을 넣어두면, 프로그램이 알아서 꺼내 씁니다.</p>
       <div class="steps">
         <div class="step">Colab 화면 <b>왼쪽 끝의 🔑 (비밀) 아이콘</b>을 클릭합니다.</div>
-        <div class="step"><b>“새 보안 비밀 추가”</b>를 눌러 아래 이름들을 하나씩 추가하고, 값은 선생님이 준 것을 붙여넣습니다.</div>
+        <div class="step"><b>“새 보안 비밀 추가”</b>를 눌러 아래 이름들을 하나씩 추가하고, 값은 별도로 안내받은 것을 붙여넣습니다.</div>
         <div class="step">각 항목의 <b>“노트북 액세스”</b> 스위치를 <b>켭니다(파란색).</b> 이걸 켜야 프로그램이 읽을 수 있어요.</div>
       </div>
       <div class="codebox">
-<span class="c"># 🔑 비밀 메뉴에 넣을 이름들 (값은 선생님이 따로 알려줌)</span>
+<span class="c"># 🔑 비밀 메뉴에 넣을 이름들 (값은 별도 안내)</span>
 <span class="k">DB_HOST</span>        <span class="c"># 데이터베이스 주소</span>
 <span class="k">DB_USER</span>        <span class="c"># 아이디</span>
 <span class="k">DB_PASSWORD</span>    <span class="c"># 비밀번호</span>
@@ -287,7 +287,7 @@
   <section id="faq">
     <div class="card">
       <h2><span class="num" style="background:linear-gradient(135deg,#64748b,#334155)">🆘</span>막히면 여기</h2>
-      <details><summary>❓ “DB 비밀 미설정” 이라고 떠요</summary><p>🔑 비밀 메뉴에 <code>DB_HOST</code> · <code>DB_USER</code> · <code>DB_PASSWORD</code>를 넣고 <b>노트북 액세스</b>를 켰는지 확인하세요. 값은 선생님께 받습니다.</p></details>
+      <details><summary>❓ “DB 비밀 미설정” 이라고 떠요</summary><p>🔑 비밀 메뉴에 <code>DB_HOST</code> · <code>DB_USER</code> · <code>DB_PASSWORD</code>를 넣고 <b>노트북 액세스</b>를 켰는지 확인하세요. 값은 별도로 안내받습니다.</p></details>
       <details><summary>❓ 3단계에서 오류가 나요</summary><p>1·2단계를 먼저 끝냈는지, <code>OPENAI_API_KEY</code>를 등록했는지 확인하세요. 3단계는 1·2단계 데이터가 있어야 동작합니다.</p></details>
       <details><summary>❓ 뉴스가 잘 안 모여요</summary><p>네이버가 일시적으로 막은 것일 수 있어요. 3단계는 자동으로 쉬었다 다시 시도합니다. 잠시 후 다시 실행하면 이어서 모읍니다.</p></details>
       <details><summary>❓ 다른 회사를 분석하고 싶어요</summary><p>맨 위 “⚙️ 분석가 설정” 셀의 <b>기업 네 줄</b>(코드·이름·검색어·TOPIC_CODE)만 바꾸고, 세 노트북에 똑같이 적용하면 됩니다.</p></details>
